@@ -1,19 +1,19 @@
-## Welcome to the “To Do Application”
+# Welcome to the “To Do Application”
 
-#   I. About this document:
+##   I. About this document:
 This document is to provide an overview of the project, the software and hardware requirements, and the related information about the application.
 
-#    II. Software Requirements
+##    II. Software Requirements
 - Windows 10 / macOS / Ubuntu 16
 - Angular CLI v10 and later version.
 - NodeJS v14 or later version.
 - MongoDB v4.2 or later version.
 
-#    III. Hardware Requirements
+##    III. Hardware Requirements
 - 4 GB RAM or more
 - 10GB Available Disk Space
 
-#    IV. Project Technical Specifications
+##    IV. Project Technical Specifications
 The “To Do Application” is a web application to list tasks that you need to do or complete. Displayed below are the project objectives; and scope and limitations.
 Objectives:
 The project aims:
@@ -27,12 +27,12 @@ The project aims:
 - The user can edit a task at a time.
 - The user can complete a task by clicking the task name.
 	
-# Limitations:
+## Limitations:
 	The limitations of the project includes:
 - The application will not remind the user of the uncompleted tasks.
 - The deleted task cannot be recovered.
 
-#    V. Set-up Instructions
+##    V. Set-up Instructions
 This section includes the instructions on how to install the project. Installation may vary between Operating Systems and make sure you already installed NodeJS and Angular CLI on your local machine before proceeding.
 
 - Clone the project from the repository and change the current directory to the project folder. The branch main is the most updated branch.
@@ -49,7 +49,7 @@ cd node_app
 - To conduct a unit test of the node application, change the current directory to the node_app folder and use the command npm test.
 
 
-# VI. References
+## VI. References
 
 - [Learn How to Write Project Specifications: Guide & Template](https://www.appvizer.com/magazine/operations/project-management/project-specification)
 - [A practical guide to writing technical specs](https://stackoverflow.blog/2020/04/06/a-practical-guide-to-writing-technical-specs/)
