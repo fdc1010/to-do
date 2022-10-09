@@ -55,7 +55,7 @@ cd node_app
 - [A practical guide to writing technical specs](https://stackoverflow.blog/2020/04/06/a-practical-guide-to-writing-technical-specs/)
 - [Project Documents](https://www.greycampus.com/opencampus/project-management-professional/project-documents)
 
-###### What you need:
+## What you need:
 - NodeJS
 - Angular CLI 10+
 - MongoDB
