@@ -62,7 +62,7 @@ The project aims:
 This section includes the instructions on how to install the project. Installation may vary between Operating Systems and make sure you already installed NodeJS and Angular CLI on your local machine before proceeding.
 
 - Clone the project from the repository and change the current directory to the project folder. The branch main is the most updated branch.
-	       	git clone https://github.com/kentblesario/todo_app.git
+	       	git clone https://github.com/fdc1010/to-do.git
 
 - To install the dependencies of our NodeJS back-end application, change directory to the node_app folder and input the command npm install. Run the node application by using the command nodemon.
 		
