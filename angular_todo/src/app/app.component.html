@@ -1,0 +1,52 @@
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      <h4 class="text-center text-medium">Welcome to the “To Do Application”</h4>
+      <select class="form-control float-right" style="width: auto" [(ngModel)]="itemsPerPage"
+      (change)='changePageSize()'>
+      <option [value]="5"> 5 items per page</option>
+      <option [value]="10"> 10 items per page</option>
+      <option [value]="50"> 50 items per page</option>
+    </select>
+      <div class="input-group mb-3 mt-3 w-50">
+        <input type="text" class="form-control" [(ngModel)]="todoTitle" *ngIf="!isEdit" placeholder="Add Task Here..."
+          aria-label="Add Task Here...">
+        <input type="text" class="form-control" [(ngModel)]="taskEditable.title" *ngIf="isEdit" placeholder="Edit Task Here..."
+          aria-label="Edit Task...">
+        <div class="input-group-append">
+          <button class="btn btn-outline-primary" type="submit" *ngIf="!isEdit" (click)="addTask()">Add Task</button>
+          <button class="btn btn-outline-secondary" type="submit" *ngIf="isEdit" (click)="updateTask()">Update Task</button>
+          <button class="btn btn-outline-dark" type="button" *ngIf="isEdit" title="Cancel Edit"  (click)="cancelEdit()">Cancel Edit</button>
+
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <ng-container *ngIf="tasks.length < 1">
+        <div class="text-center text-medium mt-5 mb-5">
+          <h5>You have no pending tasks</h5>
+          <h6>Please add some task to do...</h6>
+        </div>
+      </ng-container>
+      <ng-container *ngIf="tasks.length > 0">
+        <div class="alert alert-primary" role="alert" *ngFor="let task of tasks| paginate: { id: 'server', itemsPerPage: itemsPerPage, currentPage: p, totalItems: total } ">
+          <div class="row">
+            <div class="col-8" style="cursor:pointer" title="update to complete" (click)="task.status == 0 && updateToComplete(task._id)">
+              <h4 [ngStyle]="{'text-decoration': task?.status == 0 ? 'none' : 'line-through'}">{{task?.title}}</h4>
+              <small>Added at: {{task?.dateAdded|date:'medium'}}</small>
+            </div>
+            <div class="col-4 ">
+              <i class="fa fa-trash fa-2x m-3 text-dark" style="cursor:pointer" (click)="delTask(task._id)"></i>
+              <i class="fa fa-edit fa-2x m-3 text-secondary" style="cursor:pointer" (click)="editTask(task)"></i>
+            </div>
+          </div>
+        </div>
+        <pagination-controls class="float-right" id="server" (pageChange)="getTodoList($event)"></pagination-controls>
+
+      </ng-container>
+
+    </div>
+  </div>
+
+
+</div>
