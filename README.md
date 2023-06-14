@@ -36,7 +36,7 @@ The project aims:
 This section includes the instructions on how to install the project. Installation may vary between Operating Systems and make sure you already installed NodeJS and Angular CLI on your local machine before proceeding.
 
 - Clone the project from the repository and change the current directory to the project folder. The branch main is the most updated branch.
-	       	git clone https://github.com/fdc1010/to-do.git
+	       	`git clone https://github.com/fdc1010/to-do.git`
 
 - To install the dependencies of our NodeJS back-end application, change directory to the node_app folder and input the command npm install. Run the node application by using the command nodemon.
 		
@@ -65,13 +65,13 @@ cd node_app
 - Clone to project
 - navigate to node_app using ```cd node_app``` in the CLI
 - install node_modules using ```npm install``` in the CLI
-- navigate to angular_todo using ``` cd ../angular_todo``` in the CLI
+- navigate to angular_todo using ``` cd angular_todo``` in the CLI
 - install node_modules using ```npm install``` in the CLI
 
 ## How to run
 - from the base folder node_todo navigate to node_app using ```cd node_app``` in the CLI
 - input ```nodemon``` in the CLI
-- navigate to angular_todo using ``` cd ../angular_todo```
+- navigate to angular_todo using ``` cd angular_todo```
 - input ```ng s -o``` in the CLI to serve and open the application
 
 ## How to test
