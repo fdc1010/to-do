@@ -15,14 +15,14 @@ This document is to provide an overview of the project, the software and hardwar
 
 ##    IV. Project Technical Specifications
 The “To Do Application” is a web application to list tasks that you need to do or complete. Displayed below are the project objectives; and scope and limitations.
-Objectives:
-The project aims:
+### Objectives:
+#### The project aims:
 - To provide a list of tasks needed to complete.
 - To allow the user to complete a task
 - To allow the user to update a task.
 - To allow the user to delete a task.
-	Scope:
-	The scope of the project includes:
+### Scope: 
+#### The scope of the project includes:
 - The application will list the added task chronologically.
 - The user can edit a task at a time.
 - The user can complete a task by clicking the task name.
